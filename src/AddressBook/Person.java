@@ -2,47 +2,40 @@ package AddressBook;
 
 public class Person {
 
-        private String fname;
-        private String lname;
-        private long phonenumber;
+        public String firstName;
+        private String lastName;
+        private String phoneNo;
         private Address address;
 
-        public long getPhonenumber() {
-            return phonenumber;
-        }
+    public String getPhoneNo() {
+        return phoneNo;
+    }
 
-        public void setPhonenumber(long phonenumber) {
-            this.phonenumber = phonenumber;
-        }
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
+    }
 
-        public String getFname() {
-            return fname;
-        }
+    public String getFirstName() {
+        return firstName;
+    }
 
-        public void setFname(String fname) {
-            this.fname = fname;
-        }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-        public String getLname() {
-            return lname;
-        }
+    public String getLastname() {
+        return lastName;
+    }
 
-        public void setLname(String lname) {
-            this.lname = lname;
-        }
+    public void setLastname(String lastname) {
+        this.lastName = lastname;
+    }
 
-        public Address getAddress() {
-            return address;
-        }
+    public Address getAddress() {
+        return address;
+    }
 
-        public void setAddress(Address address) {
-            this.address = address;
-        }
-
-        @Override
-        public String toString() {
-            return "Person [fname=" + fname + ", lname=" + lname + ", address="
-                    + address + "]";
-        }
-
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
