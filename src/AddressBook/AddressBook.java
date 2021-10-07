@@ -10,7 +10,8 @@ import java.util.Scanner;
 
 public class AddressBook {
 
-    static AddressBook record = new AddressBook();
+    static Person record = new Person();
+    static ArrayList list = new ArrayList();
 
     public static String firstName;                       //Obj Attributes
     public static String lastName;
@@ -21,57 +22,6 @@ public class AddressBook {
     public static String phoneNo;
     //public static String email;
 
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastname() {
-        return lastName;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastName = lastname;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
 
 
     public String toString() {
@@ -81,7 +31,7 @@ public class AddressBook {
 
     public static void main(String[] args) {
 
-        ArrayList list = new ArrayList();
+
 
         Scanner sc = new Scanner(System.in);
 
@@ -92,21 +42,21 @@ public class AddressBook {
         System.out.print("Last Name: ");
         record.setLastname(sc.next());
         System.out.print("Address: ");
-        record.setAddress(sc.next());
+        //record.setAddress(sc.next());
         System.out.print("City: ");
-        record.setCity(sc.next());
+        //record.setCity(sc.next());
         System.out.print("State: ");
-        record.setState(sc.next());
+        //record.setState(sc.next());
         System.out.print("ZipCode: ");
-        record.setZipCode(sc.next());
+        //record.setZipCode(sc.next());
         System.out.print("Phone No.: ");
         record.setPhoneNo(sc.next());
         System.out.println("Created entry for " + firstName + " " + lastName);
 
         record.toString();
 
-        list.add(record);                    //Adding entry to record
-        System.out.println(list);
+        //list.add(record);                    //Adding entry to record
+        //System.out.println(list);
 
 
     }
