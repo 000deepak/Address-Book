@@ -98,7 +98,23 @@ public class AddressBook {
                 break;
             }
 
+        }
+    }
+    //method for delete_UC4
+    public static void delete(List<PersonDetails> book) {
+        System.out.println("Please enter name of contact.");
+        String nameIn = sc.next();
+        String lower_name = nameIn.toLowerCase();
 
+        for (PersonDetails i : book) {
+            String nameR = i.firstName.toLowerCase();
+            if (lower_name.equals(nameR)) {
+                book.remove(i);            //delete entry from record
+                System.out.println("Record deleted for " + i.firstName + " " + i.lastName);
+                System.out.println("Record updated.");
+            } else {
+                System.out.println("No entry found for " + nameIn);
+            }
         }
     }
 
